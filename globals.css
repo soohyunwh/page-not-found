@@ -1,0 +1,136 @@
+/* 전체 컨테이너 */
+.container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* 언어 선택 */
+.lang-selector {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lang-selector .hovered {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.lang-selector span {
+  position: relative;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.lang-selector .active {
+  color: black;
+  font-weight: bold;
+}
+
+.lang-bar.kor {
+  left: 0;
+}
+
+.lang-bar.eng {
+  left: 50px;
+}
+
+/* 상단 메뉴 - 로그인 , 회원가입, 프로젝트 소개 */
+.nav-menu span {
+  margin-left: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-menu .hovered {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* 메인화면 글 전체 */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* 왼쪽 정렬 */
+  justify-content: center; /* 필요시 위아래 정렬 유지 */
+  height: 100vh; /* 화면 전체 높이 */
+  padding-left: 20px; /* 왼쪽 여백 조정 */
+  margin-top: 100px;
+}
+
+/* Page not found */
+.main-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: left; 
+  margin-top: 100px;
+}
+
+/* . */
+.main-content .dot {
+  color: pink;
+}
+
+/* 밑에 글 <p> */
+.main-content p {
+  text-align: left; 
+  max-width: 600px; 
+  white-space: nowrap; 
+  overflow-wrap: normal; 
+}
+
+/* 챗봇연결 버튼 */
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* 챗봇연결 버튼의 버튼 */
+.chatbot-button button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  background-color: pink;
+  cursor: pointer;
+}
+
+/* 로그인 / 회원가입 */
+.auth-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
